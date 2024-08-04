@@ -18,6 +18,10 @@ app.use(cookieParser())
 app.use(morgan("dev"));
 app.use(express.static("uploads"));
 
+app.get('/working', (req, res) => {
+  res.send("working");
+});
+
 
 
 bootstrap(app);
